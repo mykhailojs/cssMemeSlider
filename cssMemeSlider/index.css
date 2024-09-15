@@ -195,5 +195,35 @@ input[type="radio"]:checked:hover {
     min-width: 100%;
 }
 
+@media screen and (max-width: 1279px) {
+    #one:checked ~ .text-one {
+        height: 100%;
+    }
+    #two:checked ~ .text-two {
+        height: 100%;
+    }
+    #thee:checked ~ .text-tree {
+        height: 100%;
+    }
+    #for:checked ~ .text-for {
+        height: 100%;
+    }
 
+    .text-one {
+        order: 6;
+    }
+    .text-two {
+        order: 6;
+    }
+    .text-tree {
+        order: 6;
+    }
+    .text-for {
+        order: 6;
+    }
+    #one {
+        margin-left: 50%;
+    }
+
+}
 
