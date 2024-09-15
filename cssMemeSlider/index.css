@@ -28,4 +28,172 @@ html {
 
 body {
     overflow-x: hidden;
+    padding:  6.25rem 1.25rem 0 1.25rem;
 }
+.image-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#one:checked ~ .image-wrapper {
+    transform: translateX(0) ;
+}
+#two:checked ~ .image-wrapper {
+    transform: translateX(-100%);
+}
+#thee:checked ~ .image-wrapper {
+    transform: translateX(-200%);
+}
+#for:checked ~ .image-wrapper {
+    transform: translateX(-300%);
+}
+.text-one {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 0;
+    height: 0;
+    order: 2;
+}
+.text-two {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 0;
+    height: 0;
+    order: 2;
+}
+.text-tree {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 0;
+    height: 0;
+    order: 2;
+}
+.text-for {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 0;
+    height: 0;
+    order: 2;
+}
+
+#one:checked ~ .text-one {
+   visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 0.313rem;
+}
+#two:checked ~ .text-two {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 0.313rem;
+}
+#thee:checked ~ .text-tree {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 0.313rem;
+}
+#for:checked ~ .text-for {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 0.313rem;
+}
+
+.slider-button-wrapper {
+    display: flex;
+    padding-top: 1.25rem;
+    gap: 6.25rem;
+    justify-content: center;
+}
+
+.slider-image {
+    height: 40rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.radio-btn {
+    margin: 0 0.313rem;
+}
+
+.radio-btn {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: border-color 0.3s ease;
+}
+
+.radio-btn:checked {
+    border-color: blue;
+}
+.slider-first-block {
+    display: flex;
+    overflow: hidden;
+    max-width: 50rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    order: 1;
+    padding-bottom: 6.25rem;
+}
+#one {
+    order: 3;
+    margin-left: auto;
+}
+#two {
+    order: 4;
+}
+#thee {
+    order: 5;
+}
+#for {
+    order: 6;
+}
+
+input[type="radio"] {
+    transition: background-color 0.3s ease;
+    transition: border-color 0.3s ease;
+}
+
+ input[type="radio"]:hover {
+    appearance: none;
+    width: 0.813rem;
+    height: 0.813rem;
+    border-radius: 50%;
+    border: 0.125rem solid blue;
+    background-color: blue;
+    cursor: pointer;
+    outline: none;
+     transition: background-color 0.3s ease;
+     transition: border-color 0.3s ease;
+}
+
+input[type="radio"]:checked:hover {
+    appearance: none;
+    width: 0.813rem;
+    height: 0.813rem;
+    border-radius: 50%;
+    border: 0.125rem solid blue;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    transition: border-color 0.3s ease;
+}
+.image-container {
+    min-width: 100%;
+}
+
+
+
